@@ -29,10 +29,21 @@ Notice: The oto that needs to be converted can't contain prefixes, suffixes and 
 python oto2seg.py "E:\Projects\Hayato_CVVC\oto.ini" "E:\Projects\Hayato_V3"
 ```
 
-
 # About VCV convertor
 This script only accept VCV of moresampler-style. You need to alignment each syllable in oto. You can use moresampler to generate base oto (With 'Rename duplicate items: Yes') and review them.
 
 The convertor only generate trans and seg files. You need to generate and modify articulation segments yourself.
 
 Yamaha plz don't kill me
+
+# OTO Settings snippet
+The oto for VCV entries must be in 'moresampler style'.
+
+For VCV entries, you should put overlap to the junction of vowels and consonants.
+
+![](./docs/images/screenshot_oto_for_VCV.png)
+
+For - CV entries, you should put offset to the beginning of the consoants.
+
+![](./docs/images/screenshot_oto_for_RCV_1.png)
+![](./docs/images/screenshot_oto_for_RCV_2.png)
