@@ -26,7 +26,7 @@ Notice: The oto that needs to be converted can't contain prefixes, suffixes and 
 
 ## Example
 ```
-python oto2seg.py "E:\Projects\Hayato_CVVC\oto.ini" "E:\Projects\Hayato_V3"\
+python oto2seg.py "E:\Projects\Hayato_CVVC\oto.ini" "E:\Projects\Hayato_V3"
 ```
 
 
