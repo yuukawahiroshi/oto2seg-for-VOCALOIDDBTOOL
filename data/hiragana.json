@@ -1,0 +1,1292 @@
+[
+  {
+    "kana": "あ",
+    "romaji": "a",
+    "phoneme": "a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "い",
+    "romaji": "i",
+    "phoneme": "i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "う",
+    "romaji": "u",
+    "phoneme": "M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "うぃ",
+    "romaji": "wi",
+    "phoneme": "w i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "うぉ",
+    "romaji": "wo",
+    "phoneme": "w o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "うぇ",
+    "romaji": "we",
+    "phoneme": "w e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "え",
+    "romaji": "e",
+    "phoneme": "e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "お",
+    "romaji": "o",
+    "phoneme": "o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "か",
+    "romaji": "ka",
+    "phoneme": "k a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "き",
+    "romaji": "ki",
+    "phoneme": "k' i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "く",
+    "romaji": "ku",
+    "phoneme": "k M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "け",
+    "romaji": "ke",
+    "phoneme": "k e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "こ",
+    "romaji": "ko",
+    "phoneme": "k o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "さ",
+    "romaji": "sa",
+    "phoneme": "s a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "し",
+    "romaji": "shi",
+    "phoneme": "S i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "す",
+    "romaji": "su",
+    "phoneme": "s M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "せ",
+    "romaji": "se",
+    "phoneme": "s e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "そ",
+    "romaji": "so",
+    "phoneme": "s o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "た",
+    "romaji": "ta",
+    "phoneme": "t a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ち",
+    "romaji": "chi",
+    "phoneme": "tS i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "つ",
+    "romaji": "tsu",
+    "phoneme": "ts M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "て",
+    "romaji": "te",
+    "phoneme": "t e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "と",
+    "romaji": "to",
+    "phoneme": "t o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "な",
+    "romaji": "na",
+    "phoneme": "n a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "に",
+    "romaji": "ni",
+    "phoneme": "J i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ぬ",
+    "romaji": "nu",
+    "phoneme": "n M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ね",
+    "romaji": "ne",
+    "phoneme": "n e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "の",
+    "romaji": "no",
+    "phoneme": "n o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "は",
+    "romaji": "ha",
+    "phoneme": "h a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ひ",
+    "romaji": "hi",
+    "phoneme": "C i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふ",
+    "romaji": "fu",
+    "phoneme": "p\\ M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふ",
+    "romaji": "hu",
+    "phoneme": "p\\ M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふぃ",
+    "romaji": "fi",
+    "phoneme": "p\\' i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふぁ",
+    "romaji": "fa",
+    "phoneme": "p\\ a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふぇ",
+    "romaji": "fe",
+    "phoneme": "p\\ e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふゃ",
+    "romaji": "fya",
+    "phoneme": "p\\' a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふゅ",
+    "romaji": "fyu",
+    "phoneme": "p\\' M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ふょ",
+    "romaji": "fyo",
+    "phoneme": "p\\' o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "へ",
+    "romaji": "he",
+    "phoneme": "h e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ほ",
+    "romaji": "ho",
+    "phoneme": "h o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ま",
+    "romaji": "ma",
+    "phoneme": "m a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "み",
+    "romaji": "mi",
+    "phoneme": "m' i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "む",
+    "romaji": "mu",
+    "phoneme": "m M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "め",
+    "romaji": "me",
+    "phoneme": "m e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "も",
+    "romaji": "mo",
+    "phoneme": "m o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "や",
+    "romaji": "ya",
+    "phoneme": "j a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ゆ",
+    "romaji": "yu",
+    "phoneme": "j M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "よ",
+    "romaji": "yo",
+    "phoneme": "j o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ら",
+    "romaji": "ra",
+    "phoneme": "4 a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "り",
+    "romaji": "ri",
+    "phoneme": "4' i",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "る",
+    "romaji": "ru",
+    "phoneme": "4 M",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "れ",
+    "romaji": "re",
+    "phoneme": "4 e",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ろ",
+    "romaji": "ro",
+    "phoneme": "4 o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "わ",
+    "romaji": "wa",
+    "phoneme": "w a",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "を",
+    "romaji": "wo",
+    "phoneme": "w o",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "ん",
+    "romaji": "n",
+    "phoneme": "N\\",
+    "type": "gojuuon"
+  },
+  {
+    "kana": "が",
+    "romaji": "ga",
+    "phoneme": "g a",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぎ",
+    "romaji": "gi",
+    "phoneme": "g' i",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぐ",
+    "romaji": "gu",
+    "phoneme": "g M",
+    "type": "dakuon"
+  },
+  {
+    "kana": "げ",
+    "romaji": "ge",
+    "phoneme": "g e",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ご",
+    "romaji": "go",
+    "phoneme": "g o",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ざ",
+    "romaji": "za",
+    "phoneme": "dz a",
+    "type": "dakuon"
+  },
+  {
+    "kana": "じ",
+    "romaji": "ji",
+    "phoneme": "dZ i",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ず",
+    "romaji": "zu",
+    "phoneme": "dz M",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぜ",
+    "romaji": "ze",
+    "phoneme": "dz e",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぞ",
+    "romaji": "zo",
+    "phoneme": "dz o",
+    "type": "dakuon"
+  },
+  {
+    "kana": "だ",
+    "romaji": "da",
+    "phoneme": "d a",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぢ",
+    "romaji": "ji",
+    "phoneme": "dZ i",
+    "type": "dakuon"
+  },
+  {
+    "kana": "づ",
+    "romaji": "zu",
+    "phoneme": "dz M",
+    "type": "dakuon"
+  },
+  {
+    "kana": "で",
+    "romaji": "de",
+    "phoneme": "d e",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ど",
+    "romaji": "do",
+    "phoneme": "d o",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ば",
+    "romaji": "ba",
+    "phoneme": "b a",
+    "type": "dakuon"
+  },
+  {
+    "kana": "び",
+    "romaji": "bi",
+    "phoneme": "b' i",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぶ",
+    "romaji": "bu",
+    "phoneme": "b M",
+    "type": "dakuon"
+  },
+  {
+    "kana": "べ",
+    "romaji": "be",
+    "phoneme": "b e",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぼ",
+    "romaji": "bo",
+    "phoneme": "b o",
+    "type": "dakuon"
+  },
+  {
+    "kana": "ぱ",
+    "romaji": "pa",
+    "phoneme": "p a",
+    "type": "handakuon"
+  },
+  {
+    "kana": "ぴ",
+    "romaji": "pi",
+    "phoneme": "p' i",
+    "type": "handakuon"
+  },
+  {
+    "kana": "ぷ",
+    "romaji": "pu",
+    "phoneme": "p M",
+    "type": "handakuon"
+  },
+  {
+    "kana": "ぺ",
+    "romaji": "pe",
+    "phoneme": "p e",
+    "type": "handakuon"
+  },
+  {
+    "kana": "ぽ",
+    "romaji": "po",
+    "phoneme": "p o",
+    "type": "handakuon"
+  },
+  {
+    "kana": "いぇ",
+    "romaji": "ye",
+    "phoneme": "j e",
+    "type": "handakuon"
+  },
+  {
+    "kana": "c",
+    "romaji": "(pause)",
+    "phoneme": "Sil",
+    "type": "sokuon"
+  },
+  {
+    "kana": "きゃ",
+    "romaji": "kya",
+    "phoneme": "k' a",
+    "type": "youon"
+  },
+  {
+    "kana": "きゅ",
+    "romaji": "kyu",
+    "phoneme": "k' M",
+    "type": "youon"
+  },
+  {
+    "kana": "きょ",
+    "romaji": "kyo",
+    "phoneme": "k' o",
+    "type": "youon"
+  },
+  {
+    "kana": "きぇ",
+    "romaji": "kye",
+    "phoneme": "k' e",
+    "type": "youon"
+  },
+  {
+    "kana": "しゃ",
+    "romaji": "sha",
+    "phoneme": "S a",
+    "type": "youon"
+  },
+  {
+    "kana": "しゅ",
+    "romaji": "shu",
+    "phoneme": "S M",
+    "type": "youon"
+  },
+  {
+    "kana": "しょ",
+    "romaji": "sho",
+    "phoneme": "S o",
+    "type": "youon"
+  },
+  {
+    "kana": "ちゃ",
+    "romaji": "cha",
+    "phoneme": "tS a",
+    "type": "youon"
+  },
+  {
+    "kana": "ちゅ",
+    "romaji": "chu",
+    "phoneme": "tS M",
+    "type": "youon"
+  },
+  {
+    "kana": "ちょ",
+    "romaji": "cho",
+    "phoneme": "tS o",
+    "type": "youon"
+  },
+  {
+    "kana": "にゃ",
+    "romaji": "nya",
+    "phoneme": "J a",
+    "type": "youon"
+  },
+  {
+    "kana": "にゅ",
+    "romaji": "nyu",
+    "phoneme": "J M",
+    "type": "youon"
+  },
+  {
+    "kana": "にょ",
+    "romaji": "nyo",
+    "phoneme": "J o",
+    "type": "youon"
+  },
+  {
+    "kana": "ひゃ",
+    "romaji": "hya",
+    "phoneme": "C a",
+    "type": "youon"
+  },
+  {
+    "kana": "ひゅ",
+    "romaji": "hyu",
+    "phoneme": "C M",
+    "type": "youon"
+  },
+  {
+    "kana": "ひょ",
+    "romaji": "hyo",
+    "phoneme": "C o",
+    "type": "youon"
+  },
+  {
+    "kana": "ほぅ",
+    "romaji": "hu",
+    "phoneme": "h M"
+  },
+  {
+    "kana": "みゃ",
+    "romaji": "mya",
+    "phoneme": "m' a",
+    "type": "youon"
+  },
+  {
+    "kana": "みゅ",
+    "romaji": "myu",
+    "phoneme": "m' M",
+    "type": "youon"
+  },
+  {
+    "kana": "みょ",
+    "romaji": "myo",
+    "phoneme": "m' o",
+    "type": "youon"
+  },
+  {
+    "kana": "りゃ",
+    "romaji": "rya",
+    "phoneme": "4' a",
+    "type": "youon"
+  },
+  {
+    "kana": "りゅ",
+    "romaji": "ryu",
+    "phoneme": "4' M",
+    "type": "youon"
+  },
+  {
+    "kana": "りょ",
+    "romaji": "ryo",
+    "phoneme": "4' o",
+    "type": "youon"
+  },
+  {
+    "kana": "りぇ",
+    "romaji": "rye",
+    "phoneme": "4' e",
+    "type": "youon"
+  },
+
+  {
+    "kana": "ぎゃ",
+    "romaji": "gya",
+    "phoneme": "g' a",
+    "type": "youon"
+  },
+  {
+    "kana": "ぎゅ",
+    "romaji": "gyu",
+    "phoneme": "g' M",
+    "type": "youon"
+  },
+  {
+    "kana": "ぎょ",
+    "romaji": "gyo",
+    "phoneme": "g' o",
+    "type": "youon"
+  },
+  {
+    "kana": "じゃ",
+    "romaji": "ja",
+    "phoneme": "dZ a",
+    "type": "youon"
+  },
+  {
+    "kana": "じゅ",
+    "romaji": "ju",
+    "phoneme": "dZ M",
+    "type": "youon"
+  },
+  {
+    "kana": "じょ",
+    "romaji": "jo",
+    "phoneme": "dZ o",
+    "type": "youon"
+  },
+  {
+    "kana": "びゃ",
+    "romaji": "bya",
+    "phoneme": "b' a",
+    "type": "youon"
+  },
+  {
+    "kana": "びゅ",
+    "romaji": "byu",
+    "phoneme": "b' M",
+    "type": "youon"
+  },
+  {
+    "kana": "びょ",
+    "romaji": "byo",
+    "phoneme": "b' o",
+    "type": "youon"
+  },
+  {
+    "kana": "ぴゃ",
+    "romaji": "pya",
+    "phoneme": "p' a",
+    "type": "youon"
+  },
+  {
+    "kana": "ぴゅ",
+    "romaji": "pyu",
+    "phoneme": "p' M",
+    "type": "youon"
+  },
+  {
+    "kana": "ぴょ",
+    "romaji": "pyo",
+    "phoneme": "p' o",
+    "type": "youon"
+  },
+  {
+    "kana": "ヴぁ",
+    "romaji": "va",
+    "phoneme": "v a",
+    "type": "youon"
+  },
+  {
+    "kana": "ヴぃ",
+    "romaji": "vi",
+    "phoneme": "v i",
+    "type": "youon"
+  },
+  {
+    "kana": "ヴ",
+    "romaji": "vu",
+    "phoneme": "v M",
+    "type": "youon"
+  },
+  {
+    "kana": "ヴぇ",
+    "romaji": "ve",
+    "phoneme": "v e",
+    "type": "youon"
+  },
+  {
+    "kana": "ヴぉ",
+    "romaji": "vo",
+    "phoneme": "v o",
+    "type": "youon"
+  },
+  {
+    "kana": "てぃ",
+    "romaji": "ti",
+    "phoneme": "t' i",
+    "type": "youon"
+  },
+  {
+    "kana": "とぅ",
+    "romaji": "tu",
+    "phoneme": "t M",
+    "type": "youon"
+  },
+  {
+    "kana": "ファ",
+    "romaji": "fa",
+    "phoneme": "p\\ a",
+    "type": "youon"
+  },
+  {
+    "kana": "フィ",
+    "romaji": "fi",
+    "phoneme": "p\\' i",
+    "type": "youon"
+  },
+  {
+    "kana": "フェ",
+    "romaji": "fe",
+    "phoneme": "p\\ e",
+    "type": "youon"
+  },
+  {
+    "kana": "フォ",
+    "romaji": "fo",
+    "phoneme": "p\\ o",
+    "type": "youon"
+  },
+  {
+    "kana": "テュ",
+    "romaji": "tyu",
+    "phoneme": "t' M",
+    "type": "youon"
+  },
+  {
+    "kana": "トァ",
+    "romaji": "twa",
+    "phoneme": "t w a",
+    "type": "youon"
+  },
+  {
+    "kana": "トィ",
+    "romaji": "twi",
+    "phoneme": "t w' i",
+    "type": "youon"
+  },
+  {
+    "kana": "トゥ",
+    "romaji": "twu",
+    "phoneme": "t w M",
+    "type": "youon"
+  },
+  {
+    "kana": "トェ",
+    "romaji": "twe",
+    "phoneme": "t w e",
+    "type": "youon"
+  },
+  {
+    "kana": "トォ",
+    "romaji": "two",
+    "phoneme": "t w' o",
+    "type": "youon"
+  },
+  {
+    "kana": "でゅ",
+    "romaji": "dyu",
+    "phoneme": "d' M",
+    "type": "youon"
+  },
+  {
+    "kana": "てゅ",
+    "romaji": "tyu",
+    "phoneme": "t' M",
+    "type": "youon"
+  },
+  {
+    "kana": "でぃ",
+    "romaji": "di",
+    "phoneme": "d' i",
+    "type": "youon"
+  },
+  {
+    "kana": "どぅ",
+    "romaji": "du",
+    "phoneme": "d' M",
+    "type": "youon"
+  },
+  {
+    "kana": "ずぃ",
+    "romaji": "zi",
+    "phoneme": "dz i",
+    "type": "youon"
+  },
+  {
+    "kana": "みぇ",
+    "romaji": "mye",
+    "phoneme": "m' e",
+    "type": "youon"
+  },
+  {
+    "kana": "つぉ",
+    "romaji": "tso",
+    "phoneme": "ts o",
+    "type": "youon"
+  },
+  {
+    "kana": "しぇ",
+    "romaji": "she",
+    "phoneme": "S e",
+    "type": "youon"
+  },
+  {
+    "kana": "つぇ",
+    "romaji": "tse",
+    "phoneme": "ts e",
+    "type": "youon"
+  },
+  {
+    "kana": "ぎぇ",
+    "romaji": "gye",
+    "phoneme": "g' e",
+    "type": "youon"
+  },
+  {
+    "kana": "ふぉ",
+    "romaji": "fo",
+    "phoneme": "p\\ o",
+    "type": "youon"
+  },
+  {
+    "kana": "つぃ",
+    "romaji": "tsi",
+    "phoneme": "ts i",
+    "type": "youon"
+  },
+  {
+    "kana": "ひぇ",
+    "romaji": "hye",
+    "phoneme": "C e",
+    "type": "youon"
+  },
+  {
+    "kana": "ちぇ",
+    "romaji": "che",
+    "phoneme": "tS e",
+    "type": "youon"
+  },
+  {
+    "kana": "びぇ",
+    "romaji": "bye",
+    "phoneme": "b' e",
+    "type": "youon"
+  },
+  {
+    "kana": "つぁ",
+    "romaji": "tsa",
+    "phoneme": "ts a",
+    "type": "youon"
+  },
+  {
+    "kana": "ぴぇ",
+    "romaji": "pye",
+    "phoneme": "p' e",
+    "type": "youon"
+  },
+  {
+    "kana": "すぃ",
+    "romaji": "si",
+    "phoneme": "s i",
+    "type": "youon"
+  },
+  {
+    "kana": "にぇ",
+    "romaji": "nye",
+    "phoneme": "J e",
+    "type": "youon"
+  },
+  {
+    "kana": "じぇ",
+    "romaji": "je",
+    "phoneme": "dZ e",
+    "type": "youon"
+  },
+  {
+    "kana": "hy",
+    "romaji": "hy",
+    "phoneme": "C I",
+    "type": "youon"
+  },
+  {
+    "kana": "でゃ",
+    "romaji": "dya",
+    "phoneme": "d' a",
+    "type": "youon"
+  },
+  {
+    "kana": "ン",
+    "romaji": "n",
+    "phoneme": "n",
+    "type": "basic"
+  },
+  {
+    "kana": "k",
+    "romaji": "k",
+    "phoneme": "k",
+    "type": "basic"
+  },
+  {
+    "kana": "びぃ",
+    "romaji": "byi",
+    "phoneme": "b' i",
+    "type": "youon"
+  },
+  {
+    "kana": "てょ",
+    "romaji": "tyo",
+    "phoneme": "t' o",
+    "type": "youon"
+  },
+  {
+    "kana": "h",
+    "romaji": "h",
+    "phoneme": "h",
+    "type": "basic"
+  },
+  {
+    "kana": "n",
+    "romaji": "n",
+    "phoneme": "n",
+    "type": "basic"
+  },
+  {
+    "kana": "ん2",
+    "romaji": "n",
+    "phoneme": "n",
+    "type": "basic"
+  },
+  {
+    "kana": "f",
+    "romaji": "f",
+    "phoneme": "p\\",
+    "type": "basic"
+  },
+  {
+    "kana": "j",
+    "romaji": "j",
+    "phoneme": "dZ",
+    "type": "basic"
+  },
+  {
+    "kana": "ry",
+    "romaji": "ry",
+    "phoneme": "J I",
+    "type": "youon"
+  },
+  {
+    "kana": "m",
+    "romaji": "m",
+    "phoneme": "m",
+    "type": "basic"
+  },
+  {
+    "kana": "dh",
+    "romaji": "dh",
+    "phoneme": "D",
+    "type": "basic"
+  },
+  {
+    "kana": "い2",
+    "romaji": "i",
+    "phoneme": "i",
+    "type": "basic"
+  },
+  {
+    "kana": "w",
+    "romaji": "w",
+    "phoneme": "w",
+    "type": "basic"
+  },
+  {
+    "kana": "v",
+    "romaji": "v",
+    "phoneme": "v",
+    "type": "basic"
+  },
+  {
+    "kana": "お2",
+    "romaji": "o",
+    "phoneme": "o",
+    "type": "basic"
+  },
+  {
+    "kana": "sh",
+    "romaji": "sh",
+    "phoneme": "S",
+    "type": "basic"
+  },
+  {
+    "kana": "s",
+    "romaji": "s",
+    "phoneme": "s",
+    "type": "basic"
+  },
+  {
+    "kana": "by",
+    "romaji": "by",
+    "phoneme": "b I",
+    "type": "youon"
+  },
+  {
+    "kana": "ts",
+    "romaji": "ts",
+    "phoneme": "ts",
+    "type": "basic"
+  },
+  {
+    "kana": "my",
+    "romaji": "my",
+    "phoneme": "m I",
+    "type": "youon"
+  },
+  {
+    "kana": "t",
+    "romaji": "t",
+    "phoneme": "t",
+    "type": "basic"
+  },
+  {
+    "kana": "r",
+    "romaji": "r",
+    "phoneme": "4",
+    "type": "basic"
+  },
+  {
+    "kana": "ty",
+    "romaji": "ty",
+    "phoneme": "tS",
+    "type": "basic"
+  },
+  {
+    "kana": "あ2",
+    "romaji": "a",
+    "phoneme": "a",
+    "type": "basic"
+  },
+  {
+    "kana": "b",
+    "romaji": "b",
+    "phoneme": "b",
+    "type": "basic"
+  },
+  {
+    "kana": "ny",
+    "romaji": "ny",
+    "phoneme": "J",
+    "type": "basic"
+  },
+  {
+    "kana": "ヴゅ",
+    "romaji": "vu",
+    "phoneme": "v M",
+    "type": "youon"
+  },
+  {
+    "kana": "ky",
+    "romaji": "ky",
+    "phoneme": "k I",
+    "type": "youon"
+  },
+  {
+    "kana": "t2",
+    "romaji": "t",
+    "phoneme": "t",
+    "type": "basic"
+  },
+  {
+    "kana": "でょ",
+    "romaji": "dyo",
+    "phoneme": "d' o",
+    "type": "youon"
+  },
+  {
+    "kana": "py",
+    "romaji": "py",
+    "phoneme": "p'",
+    "type": "youon"
+  },
+  {
+    "kana": "ch",
+    "romaji": "ch",
+    "phoneme": "tS",
+    "type": "basic"
+  },
+  {
+    "kana": "吸",
+    "romaji": "kyu",
+    "phoneme": "Asp",
+    "type": "youon"
+  },
+  {
+    "kana": "p",
+    "romaji": "p",
+    "phoneme": "p",
+    "type": "basic"
+  },
+  {
+    "kana": "y",
+    "romaji": "y",
+    "phoneme": "j",
+    "type": "basic"
+  },
+  {
+    "kana": "z",
+    "romaji": "z",
+    "phoneme": "dz",
+    "type": "basic"
+  },
+  {
+    "kana": "d",
+    "romaji": "d",
+    "phoneme": "d",
+    "type": "basic"
+  },
+  {
+    "kana": "gy",
+    "romaji": "gy",
+    "phoneme": "g'",
+    "type": "youon"
+  },
+  {
+    "kana": "・",
+    "romaji": "?",
+    "phoneme": "?",
+    "type": "basic"
+  },
+  {
+    "kana": "g",
+    "romaji": "g",
+    "phoneme": "g",
+    "type": "basic"
+  },
+  {
+    "kana": "う2",
+    "romaji": "u",
+    "phoneme": "M",
+    "type": "basic"
+  },
+  {
+    "kana": "え2",
+    "romaji": "e",
+    "phoneme": "e",
+    "type": "basic"
+  },
+  {
+    "kana": "てゃ",
+    "romaji": "tya",
+    "phoneme": "t' a",
+    "type": "youon"
+  },
+  {
+    "kana": "w",
+    "romaji": "w",
+    "phoneme": "w",
+    "type": "basic"
+  },
+  {
+    "kana": "b",
+    "romaji": "b",
+    "phoneme": "b",
+    "type": "basic"
+  },
+  {
+    "kana": "v",
+    "romaji": "v",
+    "phoneme": "v",
+    "type": "basic"
+  },
+  {
+    "kana": "d",
+    "romaji": "d",
+    "phoneme": "d",
+    "type": "basic"
+  },
+  {
+    "kana": "g",
+    "romaji": "g",
+    "phoneme": "g",
+    "type": "basic"
+  },
+  {
+    "kana": "s",
+    "romaji": "s",
+    "phoneme": "s",
+    "type": "basic"
+  },
+  {
+    "kana": "p",
+    "romaji": "p",
+    "phoneme": "p",
+    "type": "basic"
+  },
+  {
+    "kana": "n",
+    "romaji": "n",
+    "phoneme": "n",
+    "type": "basic"
+  },
+  {
+    "kana": "t",
+    "romaji": "t",
+    "phoneme": "t",
+    "type": "basic"
+  },
+  {
+    "kana": "z",
+    "romaji": "z",
+    "phoneme": "z",
+    "type": "basic"
+  },
+  {
+    "kana": "m",
+    "romaji": "m",
+    "phoneme": "m",
+    "type": "basic"
+  },
+  {
+    "kana": "ts",
+    "romaji": "ts",
+    "phoneme": "ts",
+    "type": "basic"
+  },
+  {
+    "kana": "k",
+    "romaji": "k",
+    "phoneme": "k",
+    "type": "basic"
+  }
+]
