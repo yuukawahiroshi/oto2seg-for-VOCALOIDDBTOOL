@@ -185,6 +185,8 @@ class JapaneseLanguageTool(BaseLanguageTool):
             vowel = phonemes[0]
             consonant = phonemes[1]
             art_type = "vc"
+        else:
+            return None
 
         alt_consonant_list = [consonant]
         alt_vowel_list = [vowel]
