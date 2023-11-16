@@ -258,7 +258,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 phoneme_info = get_hiragana_info(hiragana)
 
                 if phoneme_info is None:
-                    raise Exception(
+                    raise WarningException(
                         f"[Hiragana R-C-V] Could not find phoneme info for {hiragana}"
                     )
 
@@ -278,7 +278,9 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 phoneme_info = get_romaji_info(romaji)
 
                 if phoneme_info is None:
-                    return None
+                    raise WarningException(
+                        f"[Romaji R-C-V] Could not find phoneme info for {romaji}"
+                    )
 
                 if len(phoneme_info["phoneme"]) == 1:  # R-C or R-V
                     if self.is_vowel(phoneme_info["phoneme"][0], True):
@@ -288,7 +290,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 elif len(phoneme_info["phoneme"]) == 2:
                     ret.type = "rcv"
                 else:
-                    raise Exception(f"[Romaji R-C] Invalid phoneme info for {romaji}")
+                    raise WarningException(f"[Romaji R-C] Invalid phoneme info for {romaji}")
 
                 ret.phoneme_group = [phoneme_info["phoneme"]]
                 ret.phoneme_list = phoneme_info["phoneme"]
@@ -300,7 +302,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 phoneme_info = get_romaji_info(romaji)
 
                 if phoneme_info is None:
-                    raise Exception(
+                    raise WarningException(
                         f"[Romaji VR] Could not find phoneme info for {romaji}"
                     )
 
@@ -310,9 +312,9 @@ class JapaneseLanguageTool(BaseLanguageTool):
                     ret.phoneme_group = [phoneme_info["phoneme"]]
                     ret.phoneme_list = phoneme_info["phoneme"]
                 else:
-                    raise Exception(f"[Romaji VR] Invalid phoneme info for {romaji}")
+                    raise WarningException(f"[Romaji VR] Invalid phoneme info for {romaji}")
             else:
-                raise Exception(f"[Romaji VR] Invalid phoneme info for {item_alias}")
+                raise WarningException(f"[Romaji VR] Invalid phoneme info for {item_alias}")
         elif re.match(r"^([aiueoN]) ([aiueoN]|[あいうえおんアイウエオン])$", item_alias):  # V-V
             matches = re.match(r"^([aiueoN]) ([aiueoN]|[あいうえおんアイウエオン])$", item_alias)
             first_vowel = matches.group(1)
@@ -326,7 +328,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 second_vowel_info = get_hiragana_info(second_vowel)
 
             if first_vowel_info is None or second_vowel_info is None:
-                raise Exception(
+                raise WarningException(
                     f"[Romaji VV] Could not find phoneme info for {item_alias}"
                 )
 
@@ -347,7 +349,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
             vowel_info = get_hiragana_info(vowel)
 
             if n_info is None or vowel_info is None:
-                raise Exception(
+                raise WarningException(
                     f"[Romaji NV] Could not find phoneme info for {item_alias}"
                 )
 
@@ -366,7 +368,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 second_syllable_info = get_hiragana_info(second_syllable)
 
             if prev_vowel is None or second_syllable_info is None:
-                raise Exception(
+                raise WarningException(
                     f"[Romaji VCV] Could not find phoneme info for {item_alias}"
                 )
 
@@ -420,7 +422,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
             consonant_info = get_romaji_info(consonant)
 
             if vowel_info is None or consonant_info is None:
-                raise Exception(
+                raise WarningException(
                     f"[Romaji VC] Could not find phoneme info for {item_alias}"
                 )
 
@@ -467,7 +469,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 phoneme_info = get_hiragana_info(hiragana)
 
             if phoneme_info is None:
-                raise Exception(
+                raise WarningException(
                     f"[Romaji CV] Could not find phoneme info for {item_alias}"
                 )
 
@@ -475,7 +477,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
             ret.phoneme_group = [phoneme_info["phoneme"]]
             ret.phoneme_list = phoneme_info["phoneme"]
         else:
-            raise Exception(f"[Unknown Type] Invalid phoneme info for {item_alias}")
+            raise WarningException(f"[Unknown Type] Invalid phoneme info for {item_alias}")
 
         return ret
     

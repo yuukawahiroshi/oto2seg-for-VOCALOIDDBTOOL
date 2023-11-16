@@ -2,12 +2,47 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 import argparse
 import json
+import logging
 import re
 from os import path
+import traceback
 from typing import Optional, TypedDict
 from wave import open as open_wave
 
 from phoneme import *
+
+class WarningException(Exception):
+    pass
+
+class LoggerFormatter(logging.Formatter):
+    grey = "\x1b[38;20m"
+    yellow = "\x1b[33;20m"
+    red = "\x1b[31;20m"
+    bold_red = "\x1b[31;1m"
+    reset = "\x1b[0m"
+    format = "%(asctime)s [%(name)s] %(levelname)s: %(message)s (%(filename)s:%(lineno)d)"
+
+    FORMATS = {
+        logging.DEBUG: grey + format + reset,
+        logging.INFO: grey + format + reset,
+        logging.WARNING: yellow + format + reset,
+        logging.ERROR: red + format + reset,
+        logging.CRITICAL: bold_red + format + reset
+    }
+
+    def format(self, record):
+        log_fmt = self.FORMATS.get(record.levelno)
+        formatter = logging.Formatter(log_fmt)
+        return formatter.format(record)
+
+
+logger = logging.getLogger("oto2lab")
+logger.setLevel(logging.DEBUG)
+
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+ch.setFormatter(LoggerFormatter())
+logger.addHandler(ch)
 
 
 class OtoInfo:
@@ -48,55 +83,62 @@ def read_oto(oto_file: str, encoding: str = "shift-jis") -> dict[str, list[OtoIn
     oto_path = path.dirname(oto_file)
     with open(oto_file, "r", encoding=encoding) as f:
         for line in f:
-            line = line.strip()
-            if line == "" or line.startswith("#") or line.startswith(";"):
-                continue
+            try:
+                line = line.strip()
+                if line == "" or line.startswith("#") or line.startswith(";"):
+                    continue
 
-            wav_file, oto_params = line.split("=")
+                wav_file, oto_params = line.split("=")
 
-            if wav_file not in oto_dict:
-                oto_dict[wav_file] = []
+                if wav_file not in oto_dict:
+                    oto_dict[wav_file] = []
 
-            wav_file_resolved = path.join(oto_path, wav_file)
-            if not path.isfile(wav_file_resolved):
-                print(
-                    f"Warning: Could not find wav file {wav_file_resolved}, skip this line."
+                wav_file_resolved = path.join(oto_path, wav_file)
+                if not path.isfile(wav_file_resolved):
+                    logger.warning(f"Could not find wav file {wav_file_resolved}, skip this line.")
+                    
+                    continue
+
+                with open_wave(wav_file_resolved, "rb") as wav:
+                    wav_params = wav.getparams()
+                    wav_length = wav_params.nframes / wav_params.framerate * 1000
+
+                alias, offset, consonant, cutoff, preutterance, overlap = oto_params.split(
+                    ","
                 )
-                continue
 
-            with open_wave(wav_file_resolved, "rb") as wav:
-                wav_params = wav.getparams()
-                wav_length = wav_params.nframes / wav_params.framerate * 1000
+                try:
+                    offset = float(offset)
+                    consonant = float(consonant)
+                    cutoff = float(cutoff)
+                    preutterance = float(preutterance)
+                    overlap = float(overlap)
+                except ValueError:
+                    logger.warning(f"Invalid oto parameters for {wav_file}, skip this line.")
+                    continue
+                # Make all of the values absolute
+                consonant = max(offset + consonant, 0)
+                preutterance = max(offset + preutterance, 0)
+                overlap = max(offset + overlap, 0)
 
-            alias, offset, consonant, cutoff, preutterance, overlap = oto_params.split(
-                ","
-            )
+                if cutoff > 0:
+                    cutoff = max(consonant + 0.1, wav_length - offset)
+                else:
+                    cutoff = min(wav_length, offset + (-1 * cutoff))
 
-            offset = float(offset)
-            consonant = float(consonant)
-            cutoff = float(cutoff)
-            preutterance = float(preutterance)
-            overlap = float(overlap)
-            # Make all of the values absolute
-            consonant = max(offset + consonant, 0)
-            preutterance = max(offset + preutterance, 0)
-            overlap = max(offset + overlap, 0)
+                oto_info = OtoInfo()
+                oto_info.wav_file = wav_file_resolved
+                oto_info.alias = alias
+                oto_info.offset = offset
+                oto_info.consonant = consonant
+                oto_info.cutoff = cutoff
+                oto_info.preutterance = preutterance
+                oto_info.overlap = overlap
 
-            if cutoff > 0:
-                cutoff = max(consonant + 0.1, wav_length - offset)
-            else:
-                cutoff = min(wav_length, offset + (-1 * cutoff))
-
-            oto_info = OtoInfo()
-            oto_info.wav_file = wav_file_resolved
-            oto_info.alias = alias
-            oto_info.offset = offset
-            oto_info.consonant = consonant
-            oto_info.cutoff = cutoff
-            oto_info.preutterance = preutterance
-            oto_info.overlap = overlap
-
-            oto_dict[wav_file].append(oto_info)
+                oto_dict[wav_file].append(oto_info)
+            except Exception as e:
+                logger.warning(f"Failed to parse line {line}: {e}")
+                traceback.print_exc()
 
     # Sort the oto list by preutterance
     for oto_list in oto_dict.values():

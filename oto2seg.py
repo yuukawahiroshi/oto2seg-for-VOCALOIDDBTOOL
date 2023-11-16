@@ -55,7 +55,7 @@ def get_lang_tool(language_name: str) -> BaseLanguageTool:
         if hasattr(instance, "lang_tool"):
             return instance.lang_tool
     
-    raise Exception("Language %s not found." % language_name)
+    raise WarningException("Language %s not found." % language_name)
 
 def generate_articulation_segment_info(oto_list: list[OtoInfo], lang_tool: BaseLanguageTool, ignore_vcv: bool, wav_length: float) -> list[SegmentInfo]:
     seg_info_list: list[SegmentInfo] = []
@@ -276,9 +276,12 @@ def generate_articulation_segment_info(oto_list: list[OtoInfo], lang_tool: BaseL
                 }
                 seg_info_list.append(seg_info)
             else:
-                raise Exception("Unknown phoneme type: %s" % (entry_phoneme_info.type,))
+                raise WarningException(f"Unknown phoneme type: {entry_phoneme_info.type}")
+        except WarningException as e:
+            logger.warning(f"Failed to parse {oto_item.alias}: {e}")
         except Exception as e:
-            print("Warning: Failed to parse %s: %s" % (oto_item.alias, e))
+            logger.error(f"Failed to parse {oto_item.alias}: {e}")
+            traceback.print_exc()
 
         # Remove duplicate auto items
         seg_info_map: dict[str, list[SegmentInfo]] = {}
@@ -310,7 +313,7 @@ def generate_articulation_files(wav_file: str, seg_info: SegmentInfo, output_dir
     bleed_time = 100
 
     file_name = get_segment_file_name(seg_info)
-    print("Generating %s..." % file_name)
+    logger.info(f"Generating {file_name}...")
 
     append_silent_start = 0
     append_silent_end = 0
@@ -417,13 +420,13 @@ def generate_articulation_from_oto(oto_dict: dict[str, list[OtoInfo]], lang_tool
 
     missing_phoneme_list = lang_tool.get_missing_list(art_map.keys())
     
-    print("Missing Articulations: " + ", ".join(missing_phoneme_list))
+    logger.info("Missing Articulations: " + ", ".join(missing_phoneme_list))
 
     # Generate missing phoneme files
     for missing_phoneme in missing_phoneme_list:
         alt_phoneme = lang_tool.get_alternative_phoneme(missing_phoneme, art_map.keys())
         if alt_phoneme:
-            print("Alternative Articulations for %s: %s" % (missing_phoneme, alt_phoneme))
+            logger.info("Alternative Articulations for %s: %s" % (missing_phoneme, alt_phoneme))
 
             alt_phoneme_list = alt_phoneme.split(" ")
             
@@ -432,7 +435,7 @@ def generate_articulation_from_oto(oto_dict: dict[str, list[OtoInfo]], lang_tool
             
             generate_articulation_files(alternative_info["wav_file"], new_seg_info, output_dir)
         else:
-            print("Warning: Could not find alternative phoneme for %s, skip this line." % missing_phoneme)
+            logger.info("Warning: Could not find alternative phoneme for %s, skip this line." % missing_phoneme)
 
 if __name__ == "__main__":
     arg_parser = ArgumentParser(formatter_class=SmartFormatter)
