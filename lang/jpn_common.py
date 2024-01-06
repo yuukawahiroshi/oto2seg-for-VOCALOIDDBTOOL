@@ -252,7 +252,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
 
         if item_alias[0] == "-":  # R-C-V?
             item_alias = item_alias[1:].strip()
-            if re.match(r"^([ぁ-んァ-ン]+)$", item_alias):  # Hiragana R-C-V:
+            if re.match(r"^([ぁ-んァ-ンヴ]+)$", item_alias):  # Hiragana R-C-V:
                 hiragana = item_alias.replace(" ", "")
 
                 phoneme_info = get_hiragana_info(hiragana)
@@ -296,7 +296,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
                 ret.phoneme_list = phoneme_info["phoneme"]
         elif item_alias[-1] == "-":  # V-R
             item_alias = item_alias[:-1].strip()
-            if re.match(r"^([aiueonN])$", item_alias):  # Romaji V-R
+            if re.match(r"^([aiueonNm])$", item_alias):  # Romaji V-R
                 romaji = item_alias.replace(" ", "")
 
                 phoneme_info = get_romaji_info(romaji)
@@ -356,8 +356,8 @@ class JapaneseLanguageTool(BaseLanguageTool):
             ret.type = "vv"  # N-V is the same as V-V
             ret.phoneme_group = [n_info["phoneme"], vowel_info["phoneme"]]
             ret.phoneme_list = n_info["phoneme"] + vowel_info["phoneme"]
-        elif re.match(r"^([aiueonN]) ([a-zA-Z]+[aiueo]|[ぁ-んァ-ン]+)$", item_alias):  # V-C-V
-            matches = re.match(r"^([aiueonN]) ([a-zA-Z]+[aiueo]|[ぁ-んァ-ン]+)$", item_alias)
+        elif re.match(r"^([aiueonN]) ([a-zA-Z]+[aiueo]|[ぁ-んァ-ンヴ]+)$", item_alias):  # V-C-V
+            matches = re.match(r"^([aiueonN]) ([a-zA-Z]+[aiueo]|[ぁ-んァ-ンヴ]+)$", item_alias)
             prev_vowel = matches.group(1)
             second_syllable = matches.group(2)
 
@@ -460,7 +460,7 @@ class JapaneseLanguageTool(BaseLanguageTool):
             ret.type = "vc"
             ret.phoneme_group = [vowel_info["phoneme"], consonant_info["phoneme"]]
             ret.phoneme_list = vowel_info["phoneme"] + consonant_info["phoneme"]
-        elif re.match(r"(^[a-zA-Z ]+ ?[aiueonN]|[ぁ-んァ-ン]+)$", item_alias):  # C-V
+        elif re.match(r"(^[a-zA-Z ]+ ?[aiueonN]|[ぁ-んァ-ンヴ]+)$", item_alias):  # C-V
             if re.match(r"^[a-zA-Z ]+$", item_alias):
                 romaji = item_alias.replace(" ", "")
                 phoneme_info = get_romaji_info(romaji)

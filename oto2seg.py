@@ -428,7 +428,7 @@ def generate_articulation_from_oto(oto_dict: dict[str, list[OtoInfo]], lang_tool
         if alt_phoneme:
             logger.info("Alternative Articulations for %s: %s" % (missing_phoneme, alt_phoneme))
 
-            alt_phoneme_list = alt_phoneme.split(" ")
+            alt_phoneme_list = missing_phoneme.split(" ")
             
             alternative_info = art_map[alt_phoneme]
             new_seg_info: SegmentInfo = alternative_info["seg_info"].set_phonemes(alt_phoneme_list)
